@@ -2,13 +2,15 @@ Feature: Abrir páginas distintas, y validar su URL
   
   @Smoke
   Scenario Outline: Abrir páginas cualquiera
-    Given Abrir navegador '<url>' - '<number>'
+    Given Abrir navegador '<number>' - '<url>'
     And Validar la URL
     Then Cerrar navegador
 
     Examples:
-      | url                           | number |
-      | https://www.google.com/       | 1      |
-      | https://www.youtube.com/      | 2      |
-      | https://gemini.google.com/app | 3      |
-      | https://chatgpt.com/          | 4      |
+      | number | url                           |
+      | 1      | https://www.google.com/       |
+      | 2      | https://www.youtube.com/      |
+      | 3      | https://gemini.google.com/app |
+      | 4      | https://chatgpt.com/          |
+      | 5      | https://imalittletester.com/  |
+      | 6      | https://reqres.in/            |

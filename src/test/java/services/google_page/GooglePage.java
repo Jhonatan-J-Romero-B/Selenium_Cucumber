@@ -8,7 +8,7 @@ import org.testng.Assert;
 public class GooglePage {
     ////////////////////////////////////////////////////////////////////////////////////////////////
     @Given("Abrir navegador {string} - {string}")
-    public void abrir_navegador(String url, String number) {
+    public void abrir_navegador(String number, String url) {
         System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////");
         System.out.println("Prueba: " + number + " - Abriendo navegador: " + url);
         Assert.assertEquals(url, url, "Los datos son diferentes");
