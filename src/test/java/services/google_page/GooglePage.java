@@ -11,7 +11,16 @@ public class GooglePage {
     public void abrir_navegador(String number, String url) {
         System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////");
         System.out.println("Prueba: " + number + " - Abriendo navegador: " + url);
-        Assert.assertEquals(url, url, "Los datos son diferentes");
+        String validation = switch (url) {
+            case "https://www.google.com/" -> "https://www.google.com/";
+            case "https://www.youtube.com/" -> "https://www.youtube.com/";
+            case "https://gemini.google.com/app" -> "https://gemini.google.com/app";
+            case "https://chatgpt.com/" -> "https://chatgpt.com/";
+            case "https://imalittletester.com/" -> "https://imalittletester.com/";
+            case "https://reqres.in/" -> "https://reqres.in/";
+            default -> "Página no reconocida";
+        };
+        Assert.assertEquals(url, validation, "Los datos son diferentes");
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////
     @And("Validar la URL")
