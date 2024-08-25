@@ -26,14 +26,18 @@ public class GooglePage {
     @And("Validar la URL")
     public void validar_la_url() {
         System.out.println("Validando la URL");
-        Assert.assertEquals("URL Validada OK", "URL Validada OK", "Los datos son diferentes");
+        String validacion1 = "URL Validada OK";
+        String validacion2 = "URL Validada OK";
+        Assert.assertEquals(validacion1, validacion2, "Los datos son diferentes");
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////
     @Then("Cerrar navegador")
     public void cerrar_navegador() {
         System.out.println("Cerrando navegador");
+        String validacion1 = "Navegador cerrado OK";
+        String validacion2 = "Navegador cerrado OK";
         System.out.println("////////////////////////////////////////////////////////////////////////////////////////////////");
-        Assert.assertEquals("Navegador cerrado OK", "Navegador cerrado OK", "Los datos son diferentes");
+        Assert.assertEquals(validacion1, validacion2, "Los datos son diferentes");
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////
 }
