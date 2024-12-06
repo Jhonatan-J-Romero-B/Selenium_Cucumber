@@ -18,6 +18,7 @@ public class GooglePage {
             case "https://chatgpt.com/" -> "https://chatgpt.com/";
             case "https://imalittletester.com/" -> "https://imalittletester.com/";
             case "https://reqres.in/" -> "https://reqres.in/";
+            case "https://demoqa.com/" -> "https://demoqa.com/";
             default -> "Página no reconocida";
         };
         Assert.assertEquals(url, validation, "Los datos son diferentes");

@@ -14,3 +14,4 @@ Feature: Abrir páginas distintas, y validar su URL
       | 4      | https://chatgpt.com/          |
       | 5      | https://imalittletester.com/  |
       | 6      | https://reqres.in/            |
+      | 7      | https://demoqa.com/           |
